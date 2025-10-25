@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Arbelo - Diseñadora Digital</title>
+    <meta name="description"
+        content="Portfolio de diseñadora digital freelance. Especializada en diseño web, identidad visual, consultoría digital y diseño de contenido.">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="nav-logo-icon icon-sparkles"></div>
+                <span class="nav-logo-text">Portfolio</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#proceso" class="nav-link">Proceso</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><button class="btn btn-outline" id="downloadCV">Descargar CV</button></li>
+                <li><a href="#contacto" class="btn btn-primary">Contactar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">✨ Disponible para nuevos proyectos</div>
+                    <h1>Hola, soy Paula</h1>
+                    <h2>Diseñadora Digital <span>Freelance</span></h2>
+                    <p>Creo experiencias digitales únicas que combinan estética, funcionalidad y estrategia. Transformo
+                        ideas en diseños que conectan con las personas.</p>
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn btn-primary btn-lg">Ver Portfolio <span
+                                class="icon-arrow"></span></a>
+                        <a href="#contacto" class="btn btn-outline btn-lg">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-blob"></div>
+                    <div class="hero-image-card">
+                        <img src="https://images.unsplash.com/photo-1752650733757-bcb151bc2045?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Paula Arbelo - Diseñadora Digital" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="bg-white">
+        <div class="container">
+            <div class="section-title">
+                <h2>Servicios</h2>
+                <p>¿En qué puedo ayudarte?</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="card-icon gradient-1 icon-globe"></div>
+                    <h3>Diseño Web</h3>
+                    <p>Sitios web modernos, responsivos y centrados en la experiencia del usuario.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon gradient-2 icon-palette"></div>
+                    <h3>Identidad Visual</h3>
+                    <p>Logotipos, guías de marca y sistemas de diseño que cuentan tu historia.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon gradient-3 icon-chat"></div>
+                    <h3>Consultoría Digital</h3>
+                    <p>Estrategias de diseño que impulsan resultados medibles para tu negocio.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon gradient-4 icon-layout"></div>
+                    <h3>Diseño de Contenido</h3>
+                    <p>Gráficos para redes sociales, presentaciones y materiales digitales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="proceso" class="bg-gray-50">
+        <div class="container">
+            <div class="section-title">
+                <h2>Proceso de Diseño</h2>
+                <p>Cómo trabajo para llevar tu idea a la realidad</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="card-icon gradient-1 icon-lightbulb"></div>
+                    <h3>Investigación</h3>
+                    <p>Entiendo tus necesidades y el mercado para crear una solución efectiva.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon gradient-2 icon-palette"></div>
+                    <h3>Diseño Visual</h3>
+                    <p>Creo conceptos visuales que reflejan tu marca y mensaje.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon gradient-3 icon-pencil"></div>
+                    <h3>Iteración</h3>
+                    <p>Refino los diseños basándome en feedback y pruebas de usuario.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon gradient-4 icon-rocket"></div>
+                    <h3>Lanzamiento</h3>
+                    <p>Entregamos un producto final listo para usar y promocionar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="bg-white">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mi Trabajo</h2>
+                <p>Explora mis proyectos más recientes</p>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="Todos">Todos</button>
+                <button class="filter-btn" data-category="Diseño Web">Diseño Web</button>
+                <button class="filter-btn" data-category="Branding">Branding</button>
+                <button class="filter-btn" data-category="UX/UI">UX/UI</button>
+                
+            </div>
+            <div class="grid grid-3" id="projectsGrid">
+                <div class="project-card" data-category="Diseño Web">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1676792519027-7c42006d7b4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Rediseño Web" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Diseño Web</span>
+                        <h3 class="project-title">Rediseño Web Completo</h3>
+                        <p class="project-description">Plataforma de e-commerce moderna con enfoque en conversión y
+                            experiencia de usuario.</p>
+                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="Branding">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1633533447057-56ccf997f4fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Identidad de Marca" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Branding</span>
+                        <h3 class="project-title">Identidad de Marca</h3>
+                        <p class="project-description">Sistema completo de identidad visual para startup tecnológica.
+                        </p>
+                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="UX/UI">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="App Móvil" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">UX/UI</span>
+                        <h3 class="project-title">App Móvil Fitness</h3>
+                        <p class="project-description">Diseño de interfaz completa para aplicación de fitness con
+                            tracking personalizado.</p>
+                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="bg-gray-50">
+        <div class="container-md">
+            <div class="about-card">
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-blob"></div>
+                        <img src="https://images.unsplash.com/photo-1752650733757-bcb151bc2045?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Paula Arbelo" class="about-image">
+                    </div>
+                    <div class="about-content">
+                        <h2>Sobre Mí</h2>
+                        <p>Soy una diseñadora digital apasionada por crear experiencias que no solo se ven bien, sino
+                            que también funcionan perfectamente. Con más de 5 años de experiencia, he trabajado con
+                            startups, pymes y empresas consolidadas.</p>
+                        <p>Mi enfoque combina diseño estratégico, investigación de usuarios y atención al detalle. Creo
+                            que cada proyecto es una oportunidad para contar una historia única y crear conexiones
+                            significativas.</p>
+                        <p>Cuando no estoy diseñando, me encontrarás explorando nuevas herramientas, tomando café o
+                            buscando inspiración en el arte y la naturaleza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container-md">
+            <div class="section-title">
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>Hablemos y hagamos que suceda</p>
+            </div>
+            <div class="contact-card">
+                <form id="contactForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                        Enviar mensaje <span class="icon-send"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <div class="nav-logo-icon icon-sparkles"></div>
+                    <span style="font-weight: 600; font-size: 1.25rem;">Paula Arbelo</span>
+                </div>
+                <p class="footer-text">Diseñadora Digital Freelance</p>
+                <p class="footer-text">© 2025 Todos los derechos reservados</p>
+                <a href="porque.html" class="footer-text">Por qué</a>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                    title="LinkedIn">in</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                    title="GitHub">gh</a>
+                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link"
+                    title="Behance">be</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                    title="Instagram">ig</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
