@@ -102,3 +102,40 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.card, .project-card, .about-card').forEach(card => {
     observer.observe(card);
 });
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const root = document.querySelector(".rotating");
+  if (!root) return;
+
+  const cur = root.querySelector(".rotating__current");
+  const next = root.querySelector(".rotating__next");
+  const words = ["Freelance", "Presencial", "Remoto", "Por contrato"];
+
+  /* Fija un ancho mínimo al contenedor según la palabra más larga*/
+  const longest = words.reduce((a,b)=> a.length>b.length ? a : b, "");
+  root.style.minWidth = `${longest.length + 1}ch`;
+
+  let i = 0;
+  const ANIM = 380, DURATION = 2500;
+
+  function rotate(){
+    const incoming = words[(i + 1) % words.length];
+    next.textContent = incoming;
+
+    root.classList.add("is-animating");
+    setTimeout(() => {
+      i = (i + 1) % words.length;
+      cur.textContent = incoming;
+      root.classList.remove("is-animating");
+      next.style.transform = "translateY(110%)"; // rearmar posición
+      next.style.opacity = "0";
+    }, ANIM);
+  }
+  setInterval(rotate, DURATION);
+});
+

@@ -4,6 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W4DMDRDG');</script>
+    <!-- End Google Tag Manager -->
+
     <title>Paula Arbelo - Diseñadora Digital</title>
     <meta name="description"
         content="Portfolio de diseñadora digital freelance. Especializada en diseño web, identidad visual, consultoría digital y diseño de contenido.">
@@ -11,6 +23,12 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4DMDRDG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -37,7 +55,12 @@
                 <div class="hero-content">
                     <div class="badge">✨ Disponible para nuevos proyectos</div>
                     <h1>Hola, soy Paula</h1>
-                    <h2>Diseñadora Digital <span>Freelance</span></h2>
+                    <h2>Diseñadora Digital&nbsp;
+                        <span class="rotating" aria-hidden="true">
+                            <span class="rotating__current">Freelance</span>
+                            <span class="rotating__next"></span>
+                        </span>
+                    </h2>
                     <p>Creo experiencias digitales únicas que combinan estética, funcionalidad y estrategia. Transformo
                         ideas en diseños que conectan con las personas.</p>
                     <div class="hero-buttons">
@@ -133,7 +156,7 @@
                 <button class="filter-btn" data-category="Diseño Web">Diseño Web</button>
                 <button class="filter-btn" data-category="Branding">Branding</button>
                 <button class="filter-btn" data-category="UX/UI">UX/UI</button>
-                
+                <!-- <button class="filter-btn" data-category="Contenido">Contenido</button> -->
             </div>
             <div class="grid grid-3" id="projectsGrid">
                 <div class="project-card" data-category="Diseño Web">
@@ -175,7 +198,44 @@
                         <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
                     </div>
                 </div>
-              
+                <!-- <div class="project-card" data-category="UX/UI">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1631093441315-a06b9bcbe63f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Dashboard" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">UX/UI</span>
+                        <h3 class="project-title">Dashboard Analytics</h3>
+                        <p class="project-description">Panel de control intuitivo para visualización de datos complejos.
+                        </p>
+                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
+                    </div>
+                </div> -->
+                <!-- <div class="project-card" data-category="Contenido">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Redes Sociales" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Contenido</span>
+                        <h3 class="project-title">Campaña Redes Sociales</h3>
+                        <p class="project-description">Kit completo de contenido visual para campaña de lanzamiento.</p>
+                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
+                    </div>
+                </div> -->
+                <!-- <div class="project-card" data-category="Branding">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1655141559812-42f8c1e8942d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Branding Café" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Branding</span>
+                        <h3 class="project-title">Branding Café Artesanal</h3>
+                        <p class="project-description">Identidad completa para cafetería boutique: logo, packaging y
+                            señalética.</p>
+                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -192,14 +252,13 @@
                     </div>
                     <div class="about-content">
                         <h2>Sobre Mí</h2>
-                        <p>Soy una diseñadora digital apasionada por crear experiencias que no solo se ven bien, sino
-                            que también funcionan perfectamente. Con más de 5 años de experiencia, he trabajado con
-                            startups, pymes y empresas consolidadas.</p>
-                        <p>Mi enfoque combina diseño estratégico, investigación de usuarios y atención al detalle. Creo
-                            que cada proyecto es una oportunidad para contar una historia única y crear conexiones
-                            significativas.</p>
-                        <p>Cuando no estoy diseñando, me encontrarás explorando nuevas herramientas, tomando café o
-                            buscando inspiración en el arte y la naturaleza.</p>
+                        <p>Soy diseñadora digital y me apasiona crear experiencias que no solo se vean bien, sino que
+                            también funcionen sin complicaciones.</p>
+                        <p>Mi enfoque une diseño estratégico, investigación y atención al detalle. Cada proyecto es una
+                            oportunidad para contar una historia y generar una conexión real con quienes la viven.</p>
+                        <p>Colaboro en proyectos freelance o presenciales dentro de Montevideo y Canelones, aportando
+                            diseño, criterio y buena energía. Siempre dispuesta a aprender, compartir y sumar
+                            creatividad a nuevos desafíos.</p>
                     </div>
                 </div>
             </div>
