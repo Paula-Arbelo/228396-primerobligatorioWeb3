@@ -42,7 +42,11 @@
                 <li><a href="#proceso" class="nav-link">Proceso</a></li>
                 <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
                 <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
-                <li><button class="btn btn-outline" id="downloadCV">Descargar CV</button></li>
+                <li>
+                    <a href="cv-paula-arbelo.pdf" download class="btn btn-outline">
+                        Descargar CV
+                    </a>
+                </li>
                 <li><a href="#contacto" class="btn btn-primary">Contactar</a></li>
             </ul>
         </div>
@@ -63,6 +67,7 @@
                     </h2>
                     <p>Creo experiencias digitales únicas que combinan estética, funcionalidad y estrategia. Transformo
                         ideas en diseños que conectan con las personas.</p>
+                    <br>
                     <div class="hero-buttons">
                         <a href="#proyectos" class="btn btn-primary btn-lg">Ver Portfolio <span
                                 class="icon-arrow"></span></a>
@@ -161,15 +166,16 @@
             <div class="grid grid-3" id="projectsGrid">
                 <div class="project-card" data-category="Diseño Web">
                     <div class="project-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1676792519027-7c42006d7b4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                            alt="Rediseño Web" class="project-image">
+                        <img src="img/web-valti-portada.webp" alt="Rediseño Web" class="project-image">
                     </div>
                     <div class="project-content">
                         <span class="project-category">Diseño Web</span>
-                        <h3 class="project-title">Rediseño Web Completo</h3>
-                        <p class="project-description">Plataforma de e-commerce moderna con enfoque en conversión y
-                            experiencia de usuario.</p>
-                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
+                        <h3 class="project-title">Tienda Online Valti Regalos</h3>
+                        <p class="project-description">Creación de la tienda online en Shopify, enfocada en productos
+                            personalizados.
+                            Adapté el diseño a la identidad visual de la marca, optimizando la navegación y la
+                            presentación de productos.</p>
+                        <a href="proyecto.html" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
                     </div>
                 </div>
                 <div class="project-card" data-category="Branding">
@@ -179,7 +185,7 @@
                     </div>
                     <div class="project-content">
                         <span class="project-category">Branding</span>
-                        <h3 class="project-title">Identidad de Marca</h3>
+                        <h3 class="project-title">Sitio web académico</h3>
                         <p class="project-description">Sistema completo de identidad visual para startup tecnológica.
                         </p>
                         <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
@@ -198,44 +204,6 @@
                         <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
                     </div>
                 </div>
-                <!-- <div class="project-card" data-category="UX/UI">
-                    <div class="project-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1631093441315-a06b9bcbe63f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                            alt="Dashboard" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">UX/UI</span>
-                        <h3 class="project-title">Dashboard Analytics</h3>
-                        <p class="project-description">Panel de control intuitivo para visualización de datos complejos.
-                        </p>
-                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
-                    </div>
-                </div> -->
-                <!-- <div class="project-card" data-category="Contenido">
-                    <div class="project-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                            alt="Redes Sociales" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">Contenido</span>
-                        <h3 class="project-title">Campaña Redes Sociales</h3>
-                        <p class="project-description">Kit completo de contenido visual para campaña de lanzamiento.</p>
-                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
-                    </div>
-                </div> -->
-                <!-- <div class="project-card" data-category="Branding">
-                    <div class="project-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1655141559812-42f8c1e8942d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                            alt="Branding Café" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">Branding</span>
-                        <h3 class="project-title">Branding Café Artesanal</h3>
-                        <p class="project-description">Identidad completa para cafetería boutique: logo, packaging y
-                            señalética.</p>
-                        <a href="#" class="project-link">Ver detalles <span class="icon-arrow"></span></a>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -266,7 +234,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contacto" class="contact-section">
+    <section id="contacto" netlify class="contact-section">
         <div class="container-md">
             <div class="section-title">
                 <h2>¿Tienes un proyecto en mente?</h2>
@@ -289,8 +257,8 @@
                         <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..."
                             required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                        Enviar mensaje <span class="icon-send"></span>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Enviar mensaje 📩
                     </button>
                 </form>
             </div>
@@ -303,21 +271,21 @@
             <div class="footer-info">
                 <div class="footer-logo">
                     <div class="nav-logo-icon icon-sparkles"></div>
-                    <span style="font-weight: 600; font-size: 1.25rem;">Paula Arbelo</span>
+                    <span>Paula Arbelo</span>
                 </div>
                 <p class="footer-text">Diseñadora Digital Freelance</p>
                 <p class="footer-text">© 2025 Todos los derechos reservados</p>
-                <a href="porque.html" class="footer-text">Por qué</a>
+                <a href="porque/index.html" class="footer-text">Por qué</a>
             </div>
             <div class="social-links">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link"
-                    title="LinkedIn">in</a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                <a href="https://wa.me/59891685563?text=Hola%20Paula,%20quiero%20consultarte%20sobre%20un%20proyecto%20de%20diseño%20web"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                    Enviar mensaje por WhatsApp 💬
+                </a>
+                <a href="http://linkedin.com/in/paularbelo/" target="_blank" rel="noopener noreferrer"
+                    class="social-link" title="LinkedIn">in</a>
+                <a href="https://github.com/Paula-Arbelo" target="_blank" rel="noopener noreferrer" class="social-link"
                     title="GitHub">gh</a>
-                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link"
-                    title="Behance">be</a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"
-                    title="Instagram">ig</a>
             </div>
         </div>
     </footer>
