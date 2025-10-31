@@ -46,26 +46,26 @@ filterButtons.forEach(button => {
 
 
 
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+// // Contact form handling
+// const contactForm = document.getElementById('contactForm');
+// contactForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
 
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
-    };
+//     // Get form data
+//     const formData = {
+//         name: document.getElementById('name').value,
+//         email: document.getElementById('email').value,
+//         message: document.getElementById('message').value
+//     };
 
-    // In production, send this data to your backend/email service
-    console.log('Form submitted:', formData);
+//     // In production, send this data to your backend/email service
+//     console.log('Form submitted:', formData);
 
-    alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.\n\nPara producción, conecta este formulario con:\n- EmailJS\n- Formspree\n- Tu propio backend');
+//     alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.\n\nPara producción, conecta este formulario con:\n- EmailJS\n- Formspree\n- Tu propio backend');
 
-    // Reset form
-    contactForm.reset();
-});
+//     // Reset form
+//     contactForm.reset();
+// });
 
 // Smooth scroll offset for fixed nav
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
