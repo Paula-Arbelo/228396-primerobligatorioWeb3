@@ -1579,3 +1579,256 @@ footer {
   content: "🏠";
 }
 
+
+
+        /* ========================================
+           ENFOQUE CARD GRID
+           ======================================== */
+        .enfoque-card {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .enfoque-card {
+                grid-template-columns: 1fr auto;
+            }
+        }
+
+        .enfoque-icon-box {
+            width: 128px;
+            height: 128px;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .enfoque-icon-box svg {
+            width: 64px;
+            height: 64px;
+            color: var(--color-primary);
+        }
+
+        .enfoque-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .enfoque-text {
+            font-size: 1.25rem;
+            color: var(--color-gray-600);
+            line-height: 1.8;
+        }
+
+        .availability-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 9999px;
+            margin-bottom: 1.5rem;
+        }
+
+        .availability-badge span {
+            font-size: 0.875rem;
+            color: var(--color-primary-dark);
+            font-weight: 600;
+        }
+
+
+                .text-center {
+            text-align: center;
+        }
+
+
+         /* ========================================
+           CTA FINAL
+           ======================================== */
+        .cta-final h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+
+        .cta-final .highlight {
+            color: var(--color-primary);
+        }
+
+        @media (min-width: 768px) {
+            .cta-final h2 {
+                font-size: 3.75rem;
+            }
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-text {
+                font-size: 1.125rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 2rem;
+            }
+
+            .card-lg {
+                padding: 2.5rem;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .hero-section {
+                padding-top: 6rem;
+                padding-bottom: 3rem;
+            }
+        }
+
+
+        .hero-image {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 0 0 8px white, 0 20px 60px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+
+
+        .hero-section {
+            padding-top: 8rem;
+            padding-bottom: 5rem;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+        }
+
+        .hero-glow {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.3) 0%, rgba(5, 150, 105, 0.2) 100%);
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: 0;
+        }
+/* ========================================
+           MI RECORRIDO
+           ======================================== */
+        .recorrido-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .recorrido-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .recorrido-column h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .recorrido-column h3 svg {
+            width: 24px;
+            height: 24px;
+            color: var(--color-primary);
+        }
+
+        .recorrido-text {
+            font-size: 1.125rem;
+            color: var(--color-gray-600);
+            line-height: 1.8;
+        }
+
+        .recorrido-text strong {
+            color: var(--color-gray-900);
+            font-weight: 600;
+        }
+
+        .formacion-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .formacion-item {
+            padding: 1.25rem;
+            background: white;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--color-primary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+
+        .formacion-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateX(4px);
+        }
+
+        .formacion-title {
+            font-weight: 600;
+            color: var(--color-gray-900);
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .formacion-institution {
+            color: var(--color-gray-600);
+            font-size: 0.875rem;
+        }
+
+        .formacion-year {
+            color: var(--color-primary);
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.25rem;
+        }
+
+        .experiencia p {
+  margin-bottom: 1.4rem;
+  line-height: 1.7;
+}
