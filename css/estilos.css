@@ -26,6 +26,13 @@ body {
   overflow-x: hidden;
 }
 
+.project-hero img {
+  width: 100%;
+  max-height: 80vh; /* no más que el alto de la pantalla */
+  object-fit: cover; /* recorta sin deformar */
+  object-position: center;
+}
+
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
