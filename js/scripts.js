@@ -114,3 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(rotate, DURATION);
 });
 
+
+
+
