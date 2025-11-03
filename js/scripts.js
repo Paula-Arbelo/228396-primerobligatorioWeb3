@@ -83,9 +83,6 @@ document.querySelectorAll('.card, .project-card, .about-card').forEach(card => {
 
 
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.querySelector(".rotating");
   if (!root) return;
