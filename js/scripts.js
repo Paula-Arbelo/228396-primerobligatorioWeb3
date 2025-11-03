@@ -114,14 +114,3 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(rotate, DURATION);
 });
 
-
-
-
-  const form = document.getElementById('contactForm');
-  form.addEventListener('submit', () => {
-    // Espera 1 segundo para dar tiempo a HubSpot y Netlify
-    setTimeout(() => {
-      window.location.href = '/gracias.html';
-    }, 1000);
-  });
-
